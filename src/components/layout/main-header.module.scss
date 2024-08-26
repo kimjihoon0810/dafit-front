@@ -1,0 +1,26 @@
+@import "../../app/styles/variables.scss";
+
+.container {
+  position: relative;
+  height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & > a:first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: $main;
+  }
+
+  & > a {
+    padding: 10px;
+  }
+}

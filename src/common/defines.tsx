@@ -1,32 +1,27 @@
-import { BiHomeAlt } from "react-icons/bi";
-import { GoPeople, GoPerson } from "react-icons/go";
-import { HiOutlineBuildingOffice } from "react-icons/hi2";
-import { IoMapOutline } from "react-icons/io5";
-
 export const GNB = [
   {
     title: "시설",
     path: "/gyms",
-    icon: <HiOutlineBuildingOffice />,
+    icon: "/img/icon/building",
   },
   {
     title: "트레이너",
     path: "/trainers",
-    icon: <GoPeople />,
+    icon: "/img/icon/group",
   },
   {
     title: "홈",
     path: "/",
-    icon: <BiHomeAlt />,
+    icon: "/img/icon/home",
   },
   {
     title: "지도",
     path: "/map",
-    icon: <IoMapOutline />,
+    icon: "/img/icon/map",
   },
   {
     title: "마이",
     path: "/my",
-    icon: <GoPerson />,
+    icon: "/img/icon/face",
   },
 ];

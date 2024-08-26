@@ -1,3 +1,5 @@
+@import "../../app/styles/variables.scss";
+
 .container {
   position: fixed;
   bottom: 0;
@@ -28,17 +30,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-block: 4px;
+  padding-block: 8px;
   gap: 4px;
 
-  & > svg {
-    font-size: 14px;
-    font-weight: thin;
+  & > img {
+    font-size: 16px;
   }
 
   & > span {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     color: #1a1a1a;
+  }
+
+  &.active > * {
+    color: $main;
   }
 }

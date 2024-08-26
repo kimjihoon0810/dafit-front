@@ -4,6 +4,7 @@ import "./globals.css";
 import styles from "./layout.module.scss";
 import classNames from "classnames/bind";
 import MainFooter from "@/components/layout/main-footer";
+import MainHeader from "@/components/layout/main-header";
 
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -26,8 +27,10 @@ export default function RootLayout({
     <html lang="ko">
       <body className={pretendard.className}>
         <div className={cx("body__container")}>
-          <header style={{ height: 1000 }}></header>
-          <main>{children}</main>
+          <div className={cx("inner")}>
+            <MainHeader />
+            <main>{children}</main>
+          </div>
           <MainFooter />
         </div>
       </body>
