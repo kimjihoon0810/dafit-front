@@ -1,0 +1,29 @@
+@import "../../app/styles/variables.scss";
+
+.container {
+  margin-block: 20px;
+  padding-inline: 20px;
+}
+
+.mock-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #a3a3a3;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $main;
+    border-width: 1px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+    & > span {
+      color: $main;
+    }
+  }
+}
