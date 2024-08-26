@@ -1,0 +1,44 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fefdfe;
+}
+
+.container > nav {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.gnb-list {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.gnb-item {
+  flex: 1;
+}
+
+.gnb-item > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 4px;
+  gap: 4px;
+
+  & > svg {
+    font-size: 14px;
+    font-weight: thin;
+  }
+
+  & > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+}
